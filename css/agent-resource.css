@@ -1,0 +1,84 @@
+/* ==========================================================================
+   css/agent-resource.css
+   Agent Resource Password Portal Styles
+   ========================================================================== */
+
+.password-portal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 40px 20px;
+}
+
+.login-card {
+    background-color: var(--bg-white);
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    border-top: 5px solid var(--primary-blue);
+}
+
+.login-icon {
+    font-size: 3rem;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.login-title {
+    color: var(--dark-blue);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.login-desc {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.password-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: var(--font-main);
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 191, 255, 0.2);
+}
+
+.btn-login {
+    background-color: var(--dark-blue);
+    color: var(--bg-white);
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-login:hover {
+    background-color: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

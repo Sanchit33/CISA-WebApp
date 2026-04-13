@@ -1,0 +1,56 @@
+/* ==========================================================================
+   css/services.css
+   ========================================================================== */
+.services-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 50px; align-items: start; }
+.service-block { margin-bottom: 40px; }
+.service-block p { font-size: 1.1rem; line-height: 1.8; }
+.sub-title { color: var(--dark-blue); font-size: 1.6rem; margin-bottom: 15px; padding-bottom: 5px; border-bottom: 2px solid #eee; }
+.alert-box { background-color: #FFF3CD; color: #856404; padding: 20px; border-left: 5px solid #FFEEBA; border-radius: 4px; margin: 20px 0; }
+.sidebar-images { display: flex; flex-direction: column; gap: 30px; background-color: var(--bg-light-gray); padding: 30px; border-radius: var(--border-radius); box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+.brand-logo { max-width: 200px; margin: 0 auto; }
+.card-image { width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.poster-image { width: 100%; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border: 1px solid #ddd; }
+@media (max-width: 992px) { .services-layout { grid-template-columns: 1fr; } .sidebar-images { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; } .poster-image { max-width: 400px; } }
+@media (max-width: 768px) { .sidebar-images { flex-direction: column; } }
+
+/* --- Add this to the bottom of css/services.css --- */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio for YouTube */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin: 40px 0;
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.business-images img {
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.application-link {
+    display: inline-block;
+    background-color: var(--accent-red);
+    color: var(--bg-white);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.application-link:hover {
+    background-color: #c92a37;
+    color: white;
+}

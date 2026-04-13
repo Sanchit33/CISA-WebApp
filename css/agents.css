@@ -1,0 +1,21 @@
+/* ==========================================================================
+   css/agents.css
+   ========================================================================== */
+.agent-hero-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; align-items: center; margin-bottom: 60px; }
+.agent-image-card img { width: 100%; border-radius: var(--border-radius); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.agent-actions { display: flex; flex-direction: column; gap: 20px; }
+.btn-action { display: block; text-align: center; padding: 20px; font-weight: 800; font-size: 1.1rem; border-radius: var(--border-radius); text-transform: uppercase; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.btn-action.primary { background-color: var(--accent-red); color: var(--bg-white); }
+.btn-action.secondary { background-color: var(--dark-blue); color: var(--bg-white); }
+.btn-action:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); filter: brightness(1.1); }
+.page-heading { font-size: 3rem; text-align: center; margin-bottom: 40px; }
+.intro-text { font-size: 1.2rem; font-weight: 600; }
+.feature-list { list-style: none; margin-bottom: 30px; }
+.feature-list li { font-size: 1.1rem; padding: 8px 0; border-bottom: 1px solid #eee; }
+.highlight-box { background-color: var(--bg-light-gray); padding: 30px; border-left: 5px solid var(--accent-red); border-radius: 0 var(--border-radius) var(--border-radius) 0; margin: 40px 0; font-size: 1.1rem; }
+.text-large { font-size: 1.4rem; }
+.sub-heading { color: var(--dark-blue); font-size: 1.8rem; margin-top: 40px; }
+.cta-section { text-align: center; margin-top: 60px; padding-top: 40px; border-top: 1px solid #ddd; }
+.btn-contract { display: inline-block; margin-top: 20px; background-color: var(--primary-blue); color: var(--bg-white); padding: 15px 30px; font-size: 1.2rem; font-weight: 700; border-radius: 50px; box-shadow: 0 5px 15px rgba(0, 191, 255, 0.4); }
+.btn-contract:hover { background-color: var(--dark-blue); color: var(--bg-white); transform: translateY(-2px); }
+@media (max-width: 768px) { .agent-hero-grid { grid-template-columns: 1fr; } .page-heading { font-size: 2.2rem; } }
